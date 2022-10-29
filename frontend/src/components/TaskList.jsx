@@ -48,8 +48,9 @@ const TaskList = () => {
             }
             else {
                 setLoading(false);
-                setTasks(data);
-                console.log(data);
+                console.log("Data fecthed...");
+                setTasks(Array.from(data));
+                console.log(Array.from(data));
             }
         } catch (error) {
             setMsg(error.message);
