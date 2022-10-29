@@ -49,6 +49,7 @@ const TaskList = () => {
             else {
                 setLoading(false);
                 setTasks(data);
+                console.log(data);
             }
         } catch (error) {
             setMsg(error.message);
